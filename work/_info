@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+vcard7seg
+Z0 !s110 1473963996
+!i10b 1
+!s100 f3GAhUXECDa^[cDcj;8N03
+I78R7]Wo>z9kBaTKYUFiXl2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/z1m0b/Documents/CPEN311/Lab1
+w1473960086
+8C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v
+FC:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v
+L0 1
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1473963996.197000
+!s107 C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v|
+!i113 1
+o-work work
+vcard7seg_tb
+DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+R0
+!i10b 1
+!s100 K^fn`gfbUL^MHQ`L:STk90
+IR9OT?8A68faaM?g7O3oQ^1
+R1
+!s105 card7seg_tb_sv_unit
+S1
+R2
+w1473961344
+8C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv
+FC:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1473963996.257000
+!s107 C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv|
+!i113 1
+o-work work -sv

@@ -1,0 +1,15 @@
+C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module card7seg_tb
+
+Top level modules:
+	card7seg_tb
+
+} {} {}} C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v {1 {vlog -work work -stats=none C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module card7seg
+
+Top level modules:
+	card7seg
+
+} {} {}}
