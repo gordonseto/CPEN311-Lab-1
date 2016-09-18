@@ -1,9 +1,9 @@
-module card7seg (SW, HEX0);
+module card7seg (SW, HEX);
 
 
 input [3:0] SW;
-output [6:0] HEX0;
-reg [6:0] HEX0;
+output [6:0] HEX;
+reg [6:0] HEX;
 
 
 // Define Numbers and corresponding Binary Number
@@ -24,7 +24,7 @@ reg [6:0] HEX0;
 
 // Purely combinational always block assigning the 13 different possible input combinations to their corresponding value to be
 
-//shown on the Hex Display HEX0
+//shown on the Hex Display HEX
 
 
 always @(*)
@@ -32,21 +32,21 @@ begin
 
 // All outputs on the seven-segment display are active-low; positions with 0 are on for their respective inputs
 case (SW)
-  `num0  : HEX0 = 7'b1111111;
-  `numA  : HEX0 = 7'b0001000;
-  `num2  : HEX0 = 7'b0010010;
-  `num3  : HEX0 = 7'b0000110;
-  `num4  : HEX0 = 7'b1011000;
-  `num5  : HEX0 = 7'b0100100;
-  `num6  : HEX0 = 7'b0100000;
-  `num7  : HEX0 = 7'b0011101;
-  `num8  : HEX0 = 7'b0000000;
-  `num9  : HEX0 = 7'b0000100;
-  `num10 : HEX0 = 7'b0000001;
-  `numJ  : HEX0 = 7'b1000011;
-  `numQ  : HEX0 = 7'b0001100;
-  `numK  : HEX0 = 7'b1001000;
-   default : HEX0 = 7'b1111111;
+  `num0  : HEX = 7'b1111111;
+  `numA  : HEX = 7'b0001000;
+  `num2  : HEX = 7'b0010010;
+  `num3  : HEX = 7'b0000110;
+  `num4  : HEX = 7'b1011000;
+  `num5  : HEX = 7'b0100100;
+  `num6  : HEX = 7'b0100000;
+  `num7  : HEX = 7'b0011101;
+  `num8  : HEX = 7'b0000000;
+  `num9  : HEX = 7'b0000100;
+  `num10 : HEX = 7'b0000001;
+  `numJ  : HEX = 7'b1000011;
+  `numQ  : HEX = 7'b0001100;
+  `numK  : HEX = 7'b1001000;
+   default : HEX = 7'b1111111;
 endcase
 
 end

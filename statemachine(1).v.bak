@@ -40,11 +40,7 @@ if (state == `DEALDCARD2) begin
 end
 
 case(state)
-  `DEALPCARD1 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALDCARD1, 1, 0, 0, 0, 0, 0, 0, 0};
-  `DEALDCARD1 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALPCARD2, 0, 0, 0, 1, 0, 0, 0, 0};
-  `DEALPCARD2 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALDCARD2, 0, 1, 0, 0, 0, 0, 0, 0};
-  `DEALDCARD2 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {transitionstate, 0, 0, 0, 1, 0, 0, 0, 0};
-  default: {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALPCARD1, 0, 0, 0, 0, 0, 0, 0, 0};
+  `DEALPCARD1: nexstate = `DEALPCARD2;
 endcase
 
 endmodule

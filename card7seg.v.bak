@@ -24,7 +24,7 @@ reg [6:0] HEX0;
 
 // Purely combinational always block assigning the 13 different possible input combinations to their corresponding value to be
 
-//shown on the Hex Display Hex0
+//shown on the Hex Display HEX0
 
 
 always @(*)
@@ -32,21 +32,22 @@ begin
 
 // All outputs on the seven-segment display are active-low; positions with 0 are on for their respective inputs
 case (SW)
-  `num0  : Hex0 = 7'b1111111;
-  `numA  : Hex0 = 7'b0001000;
-  `num2  : Hex0 = 7'b0010010;
-  `num3  : Hex0 = 7'b0000110;
-  `num4  : Hex0 = 7'b1011000;
-  `num5  : Hex0 = 7'b0100100;
-  `num6  : Hex0 = 7'b0100000;
-  `num7  : Hex0 = 7'b0011101;
-  `num8  : Hex0 = 7'b0000000;
-  `num9  : Hex0 = 7'b0000100;
-  `num10 : Hex0 = 7'b0000001;
-  `numJ  : Hex0 = 7'b1000011;
-  `numQ  : Hex0 = 7'b0001100;
-  `numK  : Hex0 = 7'b1001000;
-	default : Hex0 = 7'b1111111;
+  `num0  : HEX0 = 7'b1111111;
+  `numA  : HEX0 = 7'b0001000;
+  `num2  : HEX0 = 7'b0010010;
+  `num3  : HEX0 = 7'b0000110;
+  `num4  : HEX0 = 7'b1011000;
+  `num5  : HEX0 = 7'b0100100;
+  `num6  : HEX0 = 7'b0100000;
+  `num7  : HEX0 = 7'b0011101;
+  `num8  : HEX0 = 7'b0000000;
+  `num9  : HEX0 = 7'b0000100;
+  `num10 : HEX0 = 7'b0000001;
+  `numJ  : HEX0 = 7'b1000011;
+  `numQ  : HEX0 = 7'b0001100;
+  `numK  : HEX0 = 7'b1001000;
+   default : HEX0 = 7'b1111111;
+endcase
 
 end
 	

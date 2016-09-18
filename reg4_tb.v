@@ -5,7 +5,7 @@ reg [3:0] in;
 
 wire [3:0] out;
 
-
+reg4 DUT(.in(in), .clk(clk), .reset(reset), .load(load), .out(out));
 
 always
 #5 clk=!clk;
@@ -14,7 +14,7 @@ always begin
 clk=0;
 
 #5 in=4'b0001; reset=1; load=1;
-#5 in=4'b0001; reset=1; load=0;
+#5 in=4'b0011; reset=1; load=0;
 #5 in=4'b0001; reset=0; load=1;
 #5 in=4'b0001; reset=0; load=0;
 

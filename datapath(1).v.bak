@@ -33,6 +33,6 @@ card7seg hex5(.SW(dcard3_out), .HEX(HEX5));
 scorehand pscorehand(.in1(pcard1_out), .in2(pcard2_out), .in3(pcard3_out), .score(pscore_out));
 scorehand dscorehand(.in1(dcard1_out), .in2(dcard2_out), .in3(dcard3_out), .score(dscore_out));
 
-dealcard dc(.clock(fast_clock), .resetb(resetb), .new_card(new_card));
+dealcard dc(
 
 endmodule
