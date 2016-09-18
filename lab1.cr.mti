@@ -1,15 +1,55 @@
-C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg_tb.sv
-Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
--- Compiling module card7seg_tb
+{C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/scorehand(1).v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/scorehand(1).v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
 
-Top level modules:
-	card7seg_tb
+No such file or directory. (errno = ENOENT)
 
-} {} {}} C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v {1 {vlog -work work -stats=none C:/Users/z1m0b/Documents/CPEN311/Lab1/card7seg.v
-Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
--- Compiling module card7seg
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/datapath(1).v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/datapath(1).v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
 
-Top level modules:
-	card7seg
+No such file or directory. (errno = ENOENT)
 
-} {} {}}
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/reg4.v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/reg4.v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/lab1(1).v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/lab1(1).v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/dealcard(1).v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/dealcard(1).v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/reg4_tb.v} {0 {vlog -work work -stats=none {C:\Users\Jorge D. Castro\Documents\Altera311\CPEN311-Lab-1\reg4_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/card7seg_tb.sv} {0 {vlog -work work -sv -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/card7seg_tb.sv}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/card7seg.v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/card7seg.v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/statemachine(1).v} {0 {vlog -work work -stats=none {C:/Users/Jorge D. Castro/Documents/Altera311/CPEN311-Lab-1/statemachine(1).v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: (vlog-19) Failed to access library 'work' at "work".
+
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}}
