@@ -34,18 +34,18 @@ begin
 case (SW)
   `num0  : HEX = 7'b1111111;
   `numA  : HEX = 7'b0001000;
-  `num2  : HEX = 7'b0010010;
-  `num3  : HEX = 7'b0000110;
-  `num4  : HEX = 7'b1011000;
-  `num5  : HEX = 7'b0100100;
-  `num6  : HEX = 7'b0100000;
-  `num7  : HEX = 7'b0011101;
+  `num2  : HEX = 7'b0100100;
+  `num3  : HEX = 7'b0110000;
+  `num4  : HEX = 7'b0011001;
+  `num5  : HEX = 7'b0010010;
+  `num6  : HEX = 7'b0000010;
+  `num7  : HEX = 7'b1111000;
   `num8  : HEX = 7'b0000000;
-  `num9  : HEX = 7'b0000100;
-  `num10 : HEX = 7'b0000001;
-  `numJ  : HEX = 7'b1000011;
-  `numQ  : HEX = 7'b0001100;
-  `numK  : HEX = 7'b1001000;
+  `num9  : HEX = 7'b0010000;
+  `num10 : HEX = 7'b1000000;
+  `numJ  : HEX = 7'b1100001;
+  `numQ  : HEX = 7'b0011000;
+  `numK  : HEX = 7'b0001001;
    default : HEX = 7'b1111111;
 endcase
 

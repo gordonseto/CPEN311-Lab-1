@@ -1,0 +1,181 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -18.042
+TNS   : -54.812
+
+Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
+Slack : -5.749
+TNS   : -123.652
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -0.259
+TNS   : -1.320
+
+Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
+Slack : -4.180
+TNS   : -97.270
+
+Type  : Slow 1100mV 85C Model Hold 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -2.418
+TNS   : -3.268
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.255
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -11.925
+TNS   : -23.721
+
+Type  : Slow 1100mV 85C Model Removal 'statemachine:sm|vDFF:states|Q[0]'
+Slack : 0.920
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -0.583
+TNS   : -4.928
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -19.835
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -3.118
+
+Type  : Slow 1100mV 0C Model Setup 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -18.113
+TNS   : -54.799
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
+Slack : -5.330
+TNS   : -118.035
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -0.309
+TNS   : -1.544
+
+Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Slack : -4.282
+TNS   : -100.004
+
+Type  : Slow 1100mV 0C Model Hold 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -2.389
+TNS   : -3.371
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -11.634
+TNS   : -23.098
+
+Type  : Slow 1100mV 0C Model Removal 'statemachine:sm|vDFF:states|Q[0]'
+Slack : 0.684
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -0.650
+TNS   : -5.660
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -18.176
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -3.424
+
+Type  : Fast 1100mV 85C Model Setup 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -9.559
+TNS   : -28.951
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
+Slack : -4.441
+TNS   : -79.890
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
+Slack : -2.275
+TNS   : -49.721
+
+Type  : Fast 1100mV 85C Model Hold 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -1.385
+TNS   : -1.893
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -6.696
+TNS   : -13.343
+
+Type  : Fast 1100mV 85C Model Removal 'statemachine:sm|vDFF:states|Q[0]'
+Slack : 0.750
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.345
+TNS   : -9.775
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.080
+TNS   : -0.476
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -0.067
+TNS   : -0.067
+
+Type  : Fast 1100mV 0C Model Setup 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -9.049
+TNS   : -27.391
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
+Slack : -3.568
+TNS   : -65.279
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
+Slack : -2.411
+TNS   : -53.361
+
+Type  : Fast 1100mV 0C Model Hold 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -1.260
+TNS   : -1.736
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -6.174
+TNS   : -12.287
+
+Type  : Fast 1100mV 0C Model Removal 'statemachine:sm|vDFF:states|Q[0]'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.320
+TNS   : -9.085
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.082
+TNS   : -0.488
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'statemachine:sm|vDFF:states|Q[0]'
+Slack : -0.032
+TNS   : -0.032
+
+------------------------------------------------------------

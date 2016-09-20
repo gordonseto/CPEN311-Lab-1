@@ -27,6 +27,20 @@ assign next = resetb ? nextstate : `DEALPCARD1;
 vDFF #(4) states(.clk(slow_clock), .D(next), .Q(state));
 
 always @(*) begin
+  
+case(state)
+  `DEALPCARD1 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALDCARD1, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+  `DEALDCARD1 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALPCARD2, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0};
+  `DEALPCARD2 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALDCARD2, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+  `DEALDCARD2 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`TRANSITIONSTATE, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0};
+  `TRANSITIONSTATE : {load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+  `DEALPCARD3 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALERTRANSITIONSTATE, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+  `DEALERTRANSITIONSTATE : {load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+  `DEALDCARD3 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`GAMEOVER, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0}; 
+  `GAMEOVER :  {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3} = {`GAMEOVER, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+  default: {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALPCARD1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
+endcase  
+  
 if (state == `TRANSITIONSTATE) begin
   if (pscore >= 4'b1000 | dscore >= 4'b1000) begin
     nextstate = `GAMEOVER;
@@ -65,25 +79,15 @@ end
 if (state == `GAMEOVER) begin
   if (pscore > dscore) begin
     player_win_light = 1'b1;
+    dealer_win_light = 1'b0;
   end else if (dscore > pscore) begin
+    player_win_light = 1'b0;
     dealer_win_light = 1'b1;
   end else begin
     player_win_light = 1'b1;
     dealer_win_light = 1'b1;
   end
 end
-case(state)
-  `DEALPCARD1 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALDCARD1, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-  `DEALDCARD1 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALPCARD2, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0};
-  `DEALPCARD2 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALDCARD2, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-  `DEALDCARD2 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`TRANSITIONSTATE, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0};
-  `TRANSITIONSTATE : {load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-  `DEALPCARD3 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALERTRANSITIONSTATE, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-  `DEALERTRANSITIONSTATE : {load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-  `DEALDCARD3 : {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`GAMEOVER, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0}; 
-  `GAMEOVER :  {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3} = {`GAMEOVER, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-  default: {nextstate, load_pcard1, load_pcard2, load_pcard3, load_dcard1, load_dcard2, load_dcard3, player_win_light, dealer_win_light} = {`DEALPCARD1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
-endcase
 
 end
 endmodule

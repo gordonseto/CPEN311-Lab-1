@@ -8,7 +8,7 @@ module reg4 (in, load, clk, reset, out);
 
 
 
-always @(posedge clk or negedge reset) begin
+always @(posedge clk) begin
 if (reset == 1)
 	out = load ? in : out;
 else

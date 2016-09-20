@@ -12,7 +12,7 @@ module lab1_tb;
   #1 CLOCK_50=!CLOCK_50;
   
   always 
-  #5 KEY[0] = !KEY[0];
+  #4 KEY[0] = !KEY[0];
  
   initial begin
     KEY[3] = 0;
