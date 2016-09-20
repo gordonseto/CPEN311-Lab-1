@@ -15,6 +15,8 @@ module statemachine_tb;
   initial begin
     slow_clock = 1;
     resetb = 1;
+    #20 pscore = 4'b0011; dscore = 4'b0111;
+    #30 pcard3 = 4'b0100;
   end
   
   initial begin 

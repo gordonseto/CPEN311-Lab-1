@@ -8,12 +8,11 @@ module reg4 (in, load, clk, reset, out);
 
 
 
-always @(posedge clk) begin
-if (reset == 1'd0){
-	out = 4'b0000;
-else
+always @(posedge clk or posedge reset) begin
+if (reset == 1)
 	out = load ? in : out;
-}
+else
+	out = 4'b0000;
 end
 
 
